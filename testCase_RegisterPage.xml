@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="10" >
+
+  	<parameter name="name" value="kgisl"/>
+    <parameter name="email" value="kgisl123456@gmail.com"/>
+    <parameter name="password" value="Kgisl@123"/>
+    <parameter name="invalidName" value="125a45a826%^2"/>
+    <parameter name="invalidEmail" value="kgisl123456.com"/>
+    <parameter name="invalidPassword" value="kg!23"/>
+    
+  <test  name="chromeTest">
+  	<parameter name="browser" value="chrome"/>
+  	<classes>
+  		<class name="org.kgisl.testScenario.TestCase_RegisterPage"/>
+  	</classes>
+  </test> 
+
+
+</suite> 

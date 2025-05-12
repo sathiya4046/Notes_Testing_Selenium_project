@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5">
+    
+  <test name="chromeTest">
+  	<parameter name="browser" value="chrome"/>
+  	<parameter name="email" value="sathiya@gmail.com"/>
+    <parameter name="password" value="Sathiya@123"/>
+    <parameter name="value1" value="html"/>
+    <parameter name="value2" value="creating a web element using html"/>
+    
+    <classes>
+      <class name="org.kgisl.testScenario.TestCase_WriteNotes"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
